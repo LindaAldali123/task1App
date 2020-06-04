@@ -52,11 +52,11 @@
     <div class="container">
       <form name="register">
         <output name="result" class="badge badge-light text-left">
-             Bitcion rate for <span class="descriptin" id="desc">United State Dollar :</span>
-                <span class="code badge badge-info" id="code">USD</span> 
-                <span class="rate" id="rate">9,566.0150</span>
+             Bitcion rate for <span class="description" id="desc"></span>
+                <span class="code badge badge-info" id="code"></span> 
+                <span class="rate" id="rate"></span>
          </output>
-         <select  onchange="getBpi(bpi.value)" name="bpi" id="bpi" class="badge badge-light text-left">
+         <select  onchange="getBpi(bpi.value)" name="data" id="bpi" class="badge badge-light text-left">
             <option value="USD">USD</option>
             <option value="GBP">GBP</option>
             <option value="EUR">EUR</option>
@@ -64,11 +64,17 @@
 
        
         </form>
-        
-        </div>
-        </div>
-
-   <!-- End Coin -->  
+</div>
+</div>
+   <!-- End Coin --> 
+    <!-- Start Error -->
+   <div class="container text-center">
+            <div class="err alert alert-warning">
+              <span >Connection Faild please try again Later</span>
+            </div>
+            </div>
+  <!-- End Error -->
+   
      <script type="text/javascript" src="js/jquery-3.x-git.min.js"></script>
           <script type="text/javascript" src="js/popper.min.js"></script>
        <script type="text/javascript" src="js/bootstrap.min.js"></script>
