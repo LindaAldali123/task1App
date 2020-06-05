@@ -71,21 +71,4 @@ color: #FFF !important
   
   }
   /* End coin */
-  /* Start Error */
-  .err{
-	display: none;
-	  margin-top:20px;
-	
-	
-  }
-  .container .err  span{
-	  color: red;
-  }
-  @media (max-width: 992px){
-	.err{
-		width: 100%;
-	text-align: center;
-	}	
-	
-	}
-  /* End Error */
+  

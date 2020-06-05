@@ -5,11 +5,10 @@
 console.log('succ');
  }
  function onError(){
-	$(".err").show();
 	console.log('Error');  
  }
 		 async function getBpi(code) {
-		   const URL = 'https://api.coindesk.com/v1/bpi/currentprice.json'; // Will return a 404
+		  try{ const URL = 'https://api.coindesk.com/v1/bpi/currentprice.json'; // Will return a 404
 		   const fetchResult =await fetch(URL);
 		   
 		   const response = await fetchResult;
@@ -27,12 +26,13 @@ console.log('succ');
 	   document.getElementById("rate").innerHTML=rate;
 			// console.log(data);
 	   } else {
-			 throw Error(response.statusText);
-			 $(".err").show();  
+			 throw Error(response.statusText); 
 			 console.error(error);
 			   //alert("Error connection");
 			   
 			 }
+			}
+			catch{alert('Please Try again Later Connection Faild.')}
 		 }
 		
 		// getBpi('javascript');
